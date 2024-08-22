@@ -1,6 +1,9 @@
 package net.salinlahi.evolution;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,8 +23,27 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
 
+        Button startButton = findViewById(R.id.startButton);
+        Button aboutButton = findViewById(R.id.aboutButton);
+
+        startButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Navigate to SecondActivity when the button is clicked
+                Intent intent = new Intent(MainActivity.this, ProjectListScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        aboutButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Navigate to SecondActivity when the button is clicked
+                Intent intent = new Intent(MainActivity.this, AboutScreen.class);
+                startActivity(intent);
+            }
+        });
+
+    }
 
 
 }
