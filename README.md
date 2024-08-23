@@ -14,11 +14,11 @@ Our entry to the Salinlahi Evolution 2024 contest
   - Features Preview Display (Probably Video)
   - Buttons Layout
 - Project List Screen
-  - Scroll Feature
-  - Working Project Save System
-  - Project Visually Added to the Screen (Cards)
-  - Make New Project Feature
-  - Modify/Delete Project
+  - Scroll Feature || zach - done ata
+  - Working Project Save System || zach - will do
+  - Project Visually Added to the Screen (Cards) || zach - done
+  - Make New Project Feature || zach - done
+  - Modify/Delete Project || zach - done
 - About Screen
   - Credits List
 - Editor Screen

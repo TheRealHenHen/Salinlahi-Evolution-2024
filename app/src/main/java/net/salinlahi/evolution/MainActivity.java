@@ -18,32 +18,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        // Apply window insets to avoid content being overlapped by system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        // Initialize buttons
         Button startButton = findViewById(R.id.startButton);
         Button aboutButton = findViewById(R.id.aboutButton);
 
-        startButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Navigate to SecondActivity when the button is clicked
-                Intent intent = new Intent(MainActivity.this, ProjectListScreen.class);
-                startActivity(intent);
-            }
+        // Set click listeners using lambda expressions
+        startButton.setOnClickListener(v -> {
+            // Navigate to ProjectListScreen
+            startActivity(new Intent(MainActivity.this, ProjectListScreen.class));
         });
 
-        aboutButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Navigate to SecondActivity when the button is clicked
-                Intent intent = new Intent(MainActivity.this, AboutScreen.class);
-                startActivity(intent);
-            }
+        aboutButton.setOnClickListener(v -> {
+            // Navigate to AboutScreen
+            startActivity(new Intent(MainActivity.this, AboutScreen.class));
         });
-
     }
-
-
 }
