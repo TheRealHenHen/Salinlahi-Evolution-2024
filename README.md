@@ -23,7 +23,7 @@ Our entry to the Salinlahi Evolution 2024 contest
   - Credits List
 - Editor Screen
   - 3D Rendering
-  - Components List
+  - Components List || Hendrich
   - Drag and Drop Feature of Components || Hendrich
   - Working Components Connection
   - 3D Models of Components
