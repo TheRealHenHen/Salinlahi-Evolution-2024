@@ -23,7 +23,8 @@ Our entry to the Salinlahi Evolution 2024 contest
   - Credits List
 - Editor Screen
   - 3D Rendering
-  - Drag and Drop Feature of Components
+  - Components List
+  - Drag and Drop Feature of Components || Hendrich
   - Working Components Connection
   - 3D Models of Components
     - Breadboard
@@ -31,7 +32,7 @@ Our entry to the Salinlahi Evolution 2024 contest
     - LED
     - Battery
     - Resistor 
-  - Save Project Feature
+  - Save Project Feature 
   - Undo/Redo
   - Tutorial/Documentation of How the Components Work
 - Others
