@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/breadboard_background"
     tools:context=".ProjectListScreen">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/primary_color"
+        android:background="@color/breadboard_header"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +25,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="[TITLE]"
-            android:textColor="@color/design_default_color_on_primary"
+            android:textColor="@color/breadboard_text"
             android:textSize="32sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -42,7 +44,8 @@
             android:id="@+id/projectListContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
         </LinearLayout>
     </ScrollView>
 
@@ -54,11 +57,9 @@
         android:scaleType="fitXY"
         android:translationX="-15dp"
         android:translationY="-15dp"
-        app:backgroundTint="@color/primary_color"
+        app:backgroundTint="@color/breadboard_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@android:drawable/ic_input_add" />
-
-
+        app:srcCompat="@android:drawable/ic_input_add" />  <!-- Changed from tools:srcCompat to app:srcCompat -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

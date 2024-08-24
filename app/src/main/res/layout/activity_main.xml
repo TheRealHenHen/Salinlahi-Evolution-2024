@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/breadboard_background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/primary_color"
+                android:background="@color/breadboard_header"
                 android:gravity="center"
                 android:orientation="vertical"
                 tools:layout_editor_absoluteX="1dp"
@@ -35,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="[TITLE]"
-                    android:textColor="@color/design_default_color_on_primary"
+                    android:textColor="@color/breadboard_text"
                     android:textSize="32sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -44,7 +45,8 @@
         <LinearLayout
             android:layout_width="411dp"
             android:layout_height="42dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/preview"
@@ -57,26 +59,30 @@
         <LinearLayout
             android:layout_width="411dp"
             android:layout_height="41dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+        </LinearLayout>
 
         <Button
             android:id="@+id/startButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary_color"
+            android:backgroundTint="@color/breadboard_header"
+            android:textColor="@color/breadboard_text"
             android:text="START" />
 
         <LinearLayout
             android:layout_width="411dp"
             android:layout_height="12dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+        </LinearLayout>
 
         <Button
             android:id="@+id/aboutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary_color"
-            android:text="ABOUT" />
+            android:backgroundTint="@color/breadboard_header"
+            android:text="ABOUT"
+            android:textColor="@color/breadboard_text"/>
 
     </LinearLayout>
 

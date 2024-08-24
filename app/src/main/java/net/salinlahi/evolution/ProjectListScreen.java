@@ -3,6 +3,7 @@ package net.salinlahi.evolution;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -59,6 +60,7 @@ public class ProjectListScreen extends AppCompatActivity {
         // Create a new horizontal LinearLayout to hold the project name, play button, and menu button
         LinearLayout newProjectLayout = new LinearLayout(this);
         newProjectLayout.setOrientation(LinearLayout.HORIZONTAL);
+        newProjectLayout.setGravity(Gravity.CENTER_VERTICAL); // Center items vertically
         newProjectLayout.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -117,6 +119,7 @@ public class ProjectListScreen extends AppCompatActivity {
         // Add the new LinearLayout to the container
         projectListContainer.addView(newProjectLayout);
     }
+
 
     private void showRenameDialog(TextView projectView) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
