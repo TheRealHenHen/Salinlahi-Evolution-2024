@@ -26,6 +26,11 @@ Our entry to the Salinlahi Evolution 2024 contest
   - Drag and Drop Feature of Components
   - Working Components Connection
   - 3D Models of Components
+    - Breadboard
+    - Wires
+    - LED
+    - Battery
+    - Resistor 
   - Save Project Feature
   - Undo/Redo
   - Tutorial/Documentation of How the Components Work
