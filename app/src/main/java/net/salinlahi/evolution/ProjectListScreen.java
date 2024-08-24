@@ -83,6 +83,10 @@ public class ProjectListScreen extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
+        playButton.setOnClickListener(v -> {
+            startActivity(new Intent(ProjectListScreen.this, EditorScreen.class));
+        });
+
         // Create an ImageButton for the three-dot menu
         ImageButton menuButton = new ImageButton(this);
         menuButton.setImageResource(android.R.drawable.ic_menu_more); // Use a three-dot menu icon
