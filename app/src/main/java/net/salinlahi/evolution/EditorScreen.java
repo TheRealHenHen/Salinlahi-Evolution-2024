@@ -74,7 +74,7 @@ public class EditorScreen extends AppCompatActivity {
 
                 case DragEvent.ACTION_DROP:
                     // Handle the drop
-                    Toast.makeText(EditorScreen.this, "Dropped!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditorScreen.this, "Dropped!!", Toast.LENGTH_SHORT).show();
                     return true;
 
                 case DragEvent.ACTION_DRAG_ENDED:
