@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/edba3add-5b51-4e35-9e11-7e787c2705ab)# Salinlahi Evolution 2024
+Salinlahi Evolution 2024
 Our entry to the Salinlahi Evolution 2024 contest
 
 
